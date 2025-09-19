@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.20"
+optimizer = true
+optimizer_run = 200
+via_ir = true
+
+[rpc_endpoints]
+hoodi = "https://rpc.ankr.com/eth_hoodi"
+
+[etherscan]
+hoodi = { key = "${EQG2I4KVFE5B222FPWB8EVAT1G45JDHVSY}", url = "https://hoodi.etherscan.io/api", chain = 560048 }
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
